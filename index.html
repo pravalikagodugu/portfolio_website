@@ -1,0 +1,219 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pravalika Godugu - Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#hero" class="logo">Pravalika</a>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Pravalika Godugu 👋</h1>
+            <p>I create <span id="typing-effect"></span></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/godugu-pravalika" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/pravalikagodugu/" target="_blank" id="github-link"><i
+                        class="fab fa-github"></i></a>
+            </div>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+        <div class="scroll-down-indicator"><a href="#education"><span></span></a></div>
+    </section>
+
+    <section id="education" class="section-container">
+        <h2>Educational Qualifications</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Aurora’s PG College</h3>
+                    <p>Master of Computer Applications </p><em> Nov 2023 – Sep 2025 </em> <br>CGPA: 7.2/10
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>St. Ann’s College for Women</h3>
+                    <p>PG Diploma in Data Analytics </p><em>Oct 2022 – Aug 2023 </em><br> CGPA: 9.2/10
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Jagruti Degree & PG College</h3>
+                    <p>B.Sc. (Maths, Stats, CS) </p><em> Jul 2019 – Aug 2022 </em><br>CGPA: 8.4/10
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-container">
+        <h2>Technical Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>
+                        <img src="D:\Website\Innomatics.jpg" alt="Innomatics Logo" class="company-logo-small">
+                        Innomatics Research Labs
+                    </h3>
+                    <h4><br><b>Full Stack Developer Intern</h4> </b>
+                    <h5><em>Sep 2024 – Nov 2024</em></h5><br>
+                    <p>Built scalable web apps with React, Node.js, Express & MongoDB; optimized CRUD and improved
+                        performance.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>
+                        <img src="D:\Website\Tecnocollabs .jpg" alt="TechnoColabs Logo" class="company-logo-small">
+                        TechnoColabs
+                    </h3>
+                    <h4><br><b>Data Science Intern <h4></h4></b>
+                        <h5><em> May 2023 – Jun 2023</em></h5><br>
+                        <p>Applied ML algorithms (KNN, Decision Trees) to forecast sales trends; built Tableau
+                            dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>REST APIs</li>
+                    <li>Django ; Flask</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science & Analytics</h3>
+                <ul>
+                    <li>Machine Learning Algorithms</li>
+                    <li>Power BI, Tableau</li>
+                    <li>Pandas</li>
+                    <li> Sklearn</li>
+                    <li>Seaborn</li>
+                    <li></li> Matplotlib</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li> Azure</li>
+                    <li> GCP</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="section-container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Spam & Fake User Detection (Twitter/X)</h3><br>
+                <p>Flask + React app detecting fake users on X/Twitter with 84% accuracy; optimized query execution in
+                    SQLite.
+                </p>
+                <div class="project-link"><a
+                        href="https://github.com/pravalikagodugu/Spam-and-Fake-user-Detection/tree/main"
+                        target="_blank"><u>View Repository</u></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Blog Application System</h3><br>
+                <p>Django-based system with modular OOP design, authentication & CRUD operations.</p>
+                <div class="project-link"><a href="https://github.com/pravalikagodugu/django-blog-app"
+                        target="_blank"><u>View
+                            Repository</u></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Full Stack To-Do Application</h3><br>
+                <p>MERN app with bulk task management, priority handling & distributed state updates.</p>
+                <div class="project-link"><a href="https://github.com/pravalikagodugu/MernToDo" target="_blank"><u>View
+                            Repository</u></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce Dashboard</h3><br>
+                <p>React + Redux + Node.js with MySQL schema for low-latency analytics.</p>
+                <div class="project-link"><a href="https://github.com/pravalikagodugu/MERN-Stack-E-Commerce-Project"
+                        target="_blank"><u>View Repository</u></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>BigMart Sales Prediction</h3><br>
+                <p>Applied PCA & correlation analysis; built ML models and visualized insights with Power BI.</p>
+                <div class="project-link">
+                    <a href="https://github.com/pravalikagodugu/BigMart-Sales-Analysis-and-Prediction"
+                        target="_blank"><u>View
+                            Repository</u></a>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="certifications" class="section-container">
+        <h2>Certifications</h2>
+        <ul style="list-style:none;text-align:center">
+            <li>Agile Methodology & Quality Engineering Bootcamp | CSI</li><br>
+            <li>AWS Cloud Practitioner | Geeks For Geeks</li><br>
+            <li>Salesforce Certified Administrator | Geeks For Geeks</li><br>
+            <li>Mastering Generative AI & ChatGPT | Geeks For Geeks</li><br>
+        </ul>
+    </section>
+
+    <section id="contact" class="section-container">
+        <h3>Contact</h3><br>
+        <p>gpravalika2002@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Pravalika Godugu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
